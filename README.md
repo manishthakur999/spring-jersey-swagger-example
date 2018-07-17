@@ -105,4 +105,4 @@ You can view Swagger JSON doc at `http://localhost:8080/swagger.json`
 
 
 [travis-badge]: https://travis-ci.org/indrabasak/spring-jersey-swagger-example.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/indrabasak/spring-jersey-swagger-example/
+[travis-badge-url]: https://travis-ci.org/indrabasak/spring-jersey-swagger-example/# spring-jersey-swagger-example
