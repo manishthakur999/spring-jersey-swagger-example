@@ -18,8 +18,10 @@
         <mockito.version>1.10.19</mockito.version>
         <spring.boot.version>1.5.8.RELEASE</spring.boot.version>
         <swagger.version>2.7.0</swagger.version>
-        <swagger.ui.version>3.5.0</swagger.ui.version>
+       <!-- <swagger.ui.version>3.5.0</swagger.ui.version>-->
+        <swagger.ui.version>2.2.10</swagger.ui.version>
         <swagger.jersey2.version>1.5.17</swagger.jersey2.version>
+        <swagger-maven-plugin.version>3.1.2</swagger-maven-plugin.version>
     </properties>
 
         <dependencyManagement>
@@ -150,6 +152,40 @@
                     </execution>
                 </executions>
             </plugin>
+
+
+            <plugin>
+                <groupId>com.github.kongchen</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <version>${swagger-maven-plugin.version}</version>
+                <configuration>
+                    <apiSources>
+                        <apiSource>
+                            <springmvc>false</springmvc>
+                            <locations>com.basaki.controller</locations>
+                            <schemes>http,https</schemes>
+                            <host>localhost:8080</host>
+                            <basePath>/Book_API</basePath>
+                            <info>
+                                <title>Swagger spec for our BOOK API</title>
+                                <version>v1</version>
+                                <description>This is spec for our BOOK API</description>
+
+                            </info>
+                            <swaggerDirectory>${project.basedir}/src/main/resources/static</swaggerDirectory>
+                        </apiSource>
+                    </apiSources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

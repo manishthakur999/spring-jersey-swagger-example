@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
  * {@code BookService} provides CRUD functioanality on book.
  * <p/>
  *
- * @author Indra Basak
+ * @author Pawan Jain
  * @since 11/28/17
  */
 @Service

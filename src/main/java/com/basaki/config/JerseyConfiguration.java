@@ -15,8 +15,8 @@ import org.springframework.context.annotation.Configuration;
  * Boot.
  * <p/>
  *
- * @author Indra Basak
- * @since 11/28/17
+ * @author pawan Jain
+ * @since 13/07/18
  */
 @Configuration
 public class JerseyConfiguration extends ResourceConfig {
@@ -36,7 +36,7 @@ public class JerseyConfiguration extends ResourceConfig {
         config.setTitle("Spring, Jersey, and Swagger Example");
         config.setVersion("1.0.0");
         config.setBasePath("/");
-        config.setResourcePackage("com.basaki");
+        config.setResourcePackage("com.basaki.controller");
         config.setScan(true);
     }
 }

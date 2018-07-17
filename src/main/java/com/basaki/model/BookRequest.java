@@ -8,7 +8,7 @@ import lombok.Data;
  * {@code BookRequest} represents a response during book creation.
  * <p/>
  *
- * @author Indra Basak
+ * @author Pawan Jain
  * @since 11/28/17
  */
 @Data
@@ -17,6 +17,7 @@ public class BookRequest {
     private String title;
 
     private String author;
+
 
     @JsonCreator
     public BookRequest(@JsonProperty("title") String title,

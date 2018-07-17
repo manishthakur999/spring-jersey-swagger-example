@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
  * boot application example.
  * <p/>
  *
- * @author Indra Basak
+ * @author Pawan Jain
  * @since 11/15/17
  */
 @SpringBootApplication

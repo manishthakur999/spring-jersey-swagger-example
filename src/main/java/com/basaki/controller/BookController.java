@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
  * {@code BookController} exposes book API.
  * <p/>
  *
- * @author Indra Basak
+ * @author Pawan Jain
  * @since 11/28/17
  */
 @Component

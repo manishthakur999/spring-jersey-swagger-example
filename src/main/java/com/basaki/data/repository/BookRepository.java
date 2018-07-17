@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * for springfox-data-rest.
  * <p/>
  *
- * @author Indra Basak
+ * @author Pawan Jain
  * @since 11/28/17
  */
 @Repository

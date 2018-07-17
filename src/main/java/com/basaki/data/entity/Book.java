@@ -16,7 +16,7 @@ import org.hibernate.annotations.GenericGenerator;
  * {@code Book} represents a book entity.
  * <p/>
  *
- * @author Indra Basak
+ * @author Pawan Jain
  * @since 11/28/17
  */
 @Entity
